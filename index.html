@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jams</title>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./img/music-note.jpeg" />
+    <link rel="icon" href="./img/music-note.jpeg" />
+  </head>
+    <body>
+        <header>
+            <h1> Audio Elements with Javascript</h1>
+        </header>
+        <main>
+            <section class="media">
+                <p>This page has no HTML element</p>
+                <p>
+                    <label>Audio is Playing:</label>
+                    <mark id="isPlaying" aria-readonly="true"></mark>
+                </p>
+                <p>
+                    <button id="btnLoad">Load Current Track</button>
+                    &nbsp;
+                    <button id="btnPlay">Play Loaded Track</button>
+                    &nbsp;
+                    <button id="btnPause">Pause Loaded Track</button>
+                    &nbsp;
+                    <button id="btnNext">Load Next Track</button>
+                    &nbsp;
+                </p>
+                <p>Total Time</p> <time id="total"></time></p>
+                <p>Track Name: <span id=title class=title></span></p>
+                <p>Current Time <time id=current></time></p>
+                <p>Percentage Played <span id=pctPlay></span></p>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
